@@ -1,0 +1,72 @@
+body {
+	background:url('../images/headerImg.jpg') 100% 90% no-repeat fixed;
+	font-family: 'Dosis', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bgColor {
+	background-color: rgba(255,255,255,0.4);
+	width: 50%;
+	margin: 0 auto;
+	padding: 9px;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: black;
+	font-size: 1.6em;
+}
+a:hover, a:focus {
+	color: red;
+	text-decoration: none;
+}
+.jumbotron {
+	background:url('../images/headerImg.jpg') 100% 90% no-repeat fixed;
+	padding: 45vh 0;
+}
+header h1 {
+	font-weight: 800;
+	mix-blend-mode: overlay;
+}
+header p {
+	margin: 0 0 2em 0;
+	line-height: 0.5;
+}
+header p span {
+	display: inline-block;
+	position: relative;
+	mix-blend-mode: overlay;
+}
+@media (max-width: 537px) {
+	header h1 {
+		font-size: 2em;
+	}
+	.jumbotron {
+		padding: 28vh 0;
+	}
+	a {
+		display: block;
+		font-size: 1.6em;
+	}
+}
+@media (min-width: 538px) {
+	header p span:before,
+	header p span:after {
+		content: '';
+		position: absolute;
+		height: 5px;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		top: 14px;
+		width: 5vw;
+	}
+	header p span:before {
+		right: 100%;
+		margin-right: 15px;
+	}
+	header p span:after {
+		left: 100%;
+		margin-left: 15px;
+	}
+}
